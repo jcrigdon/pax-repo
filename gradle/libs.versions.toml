@@ -1,0 +1,248 @@
+[versions]
+bcprovJdk18onVersion = "1.77"
+berTlvVersion = "1.0-11"
+desugarJdkLibVersion = "2.0.4"
+emvBertlvVersion = "0.1.8"
+guavaVersion = "33.0.0-android"
+junitVersion = "4.13.2"
+koinAndroidVersion = "3.1.0"
+kotlinLoggingJvmVersion = "2.0.11"
+kotlinResultVersion = "1.1.18"
+kotlinRetryVersion = "1.0.9"
+kotlinxCoroutinesTestVersion = "1.7.3"
+ktor_version = "2.1.2"
+jacksonVersion = "2.12.7"
+junitJupiterVersion = "5.10.0"
+koin_version = "3.0.2"
+leakcanaryAndroidVersion = "2.14"
+logbackAndroidVersion = "3.0.0"
+signalrVersion = "8.0.3"
+slf4jApiVersion = "2.0.7"
+mapstructVersion = "1.5.5.Final"
+paxstoreSdkVersion = "9.3.0"
+robolectricVersion = "4.11.1"
+room_version = "2.6.1"
+mockkVersion = "1.13.9"
+junit5AndroidTest = "1.3.0"
+junit5AndroidVersion = "1.10.0.0"
+detektVersion = "1.23.3"
+koverVersion = "0.8.0"
+secretsVersion = "2.0.1"
+firebaseBomVersion = "33.0.0"
+googleGmsServicesVersion = "4.4.1"
+firebaseAnalyticsVersion = "3.0.1"
+gradleDoctorVersion = "0.10.0"
+dependencyCheckVersion = "9.0.10"
+awaitilityVersion = "4.2.1"
+coilVersion = "2.7.0"
+okhttpTlsVersion = "4.9.3"
+
+
+# AndroidX
+appcompatVersion = "1.6.1"
+constraintlayoutVersion = "2.1.4"
+coreKtx = "1.5.0"
+coreKtxVersion = "1.12.0"
+espressoCoreVersion = "3.5.1"
+fragmentTestingVersion = "1.6.2"
+junitKtxVersion = "1.1.5"
+legacySupportV4Version = "1.0.0"
+lifecycleLivedataKtxVersion = "2.6.2"
+material3Version = "1.1.2"
+materialVersion = "1.11.0"
+navigationFragmentKtxVersion = "2.7.6"
+runnerVersion = "1.5.2"
+rulesVersion = "1.5.0"
+workRuntimeKtxVersion = "2.7.1"
+agp = "8.5.2"
+kotlin = "2.0.0"
+workVersion = "2.7.1"
+navigationCompose = "2.7.6"
+composeBitmapVerison = "2.1.0"
+appStartupVersion = "1.1.1"
+uiGraphicsAndroid = "1.9.3"
+
+[bundles]
+ktorClientBundle = [
+    "ktor-client-core",
+    "ktor-client-cio",
+    "ktor-client-okhttp",
+    "ktor-client-logging",
+]
+
+jacksonBundle = [
+    "jackson-module-kotlin",
+    "jackson-datatype-jsr310",
+    "jackson-datatype-jdk8",
+    "jackson-dataformat-xml"
+]
+
+mockkBundle = [
+    "mockk",
+    "mockk-android"
+]
+
+junitBundle = [
+    "junit-jupiter",
+    "junit-jupiter-engine",
+    "junit-vintage-engine"
+]
+
+mannodermausBundle = [
+    "android-test-core",
+    "android-test-runner"
+]
+
+emvTlvBundle = [
+    "ber-tlv",
+    "emv-bertlv"
+]
+
+firebaseBundle = [
+    "firebaseAnalytics",
+    "firebaseCrashlytics"
+]
+
+[libraries]
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompatVersion" }
+androidx-constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayoutVersion" }
+androidx-core = { module = "androidx.test:core", version.ref = "coreKtx" }
+androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "coreKtxVersion" }
+androidx-espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "espressoCoreVersion" }
+androidx-espresso-intents = { module = "androidx.test.espresso:espresso-intents", version.ref = "espressoCoreVersion" }
+androidx-fragment-testing = { module = "androidx.fragment:fragment-testing", version.ref = "fragmentTestingVersion" }
+androidx-junit = { module = "androidx.test.ext:junit", version.ref = "junitKtxVersion" }
+androidx-junit-ktx = { module = "androidx.test.ext:junit-ktx", version.ref = "junitKtxVersion" }
+androidx-legacy-support-v4 = { module = "androidx.legacy:legacy-support-v4", version.ref = "legacySupportV4Version" }
+androidx-lifecycle-livedata-ktx = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "lifecycleLivedataKtxVersion" }
+androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycleLivedataKtxVersion" }
+androidx-lifecycle-runtime-compose = { module = "androidx.lifecycle:lifecycle-runtime-compose", version.ref = "lifecycleLivedataKtxVersion" }
+androidx-material3 = { module = "androidx.compose.material3:material3", version.ref = "material3Version" }
+androidx-navigation-fragment-ktx = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigationFragmentKtxVersion" }
+androidx-navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigationFragmentKtxVersion" }
+androidx-runner = { module = "androidx.test:runner", version.ref = "runnerVersion" }
+androidx-rules = { module = "androidx.test:rules", version.ref = "rulesVersion" }
+
+androidx-work-runtime-ktx = { module = "androidx.work:work-runtime-ktx", version.ref = "workRuntimeKtxVersion" }
+core-ktx = { module = "androidx.test:core-ktx", version.ref = "coreKtx" }
+
+ber-tlv = { module = "com.payneteasy:ber-tlv", version.ref = "berTlvVersion" }
+emv-bertlv = { module = "io.github.binaryfoo:emv-bertlv", version.ref = "emvBertlvVersion" }
+
+guava = { module = "com.google.guava:guava", version.ref = "guavaVersion" }
+
+junit = { module = "junit:junit", version.ref = "junitVersion" }
+leakcanary-android = { module = "com.squareup.leakcanary:leakcanary-android", version.ref = "leakcanaryAndroidVersion" }
+material = { module = "com.google.android.material:material", version.ref = "materialVersion" }
+
+kotlin-logging-jvm = { module = "io.github.microutils:kotlin-logging-jvm", version.ref = "kotlinLoggingJvmVersion" }
+slf4j-api = { module = "org.slf4j:slf4j-api", version.ref = "slf4jApiVersion" }
+logback-android = { module = "com.github.tony19:logback-android", version.ref = "logbackAndroidVersion" }
+
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinxCoroutinesTestVersion" }
+
+ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor_version" }
+ktor-client-cio = { module = "io.ktor:ktor-client-cio", version.ref = "ktor_version" }
+ktor-client-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktor_version" }
+ktor-client-logging = { module = "io.ktor:ktor-client-logging", version.ref = "ktor_version" }
+ktor-client-mock = { module = "io.ktor:ktor-client-mock", version.ref = "ktor_version" }
+
+jackson-module-kotlin = { module = "com.fasterxml.jackson.module:jackson-module-kotlin", version.ref = "jacksonVersion" }
+jackson-datatype-jsr310 = { module = "com.fasterxml.jackson.datatype:jackson-datatype-jsr310", version.ref = "jacksonVersion" }
+jackson-datatype-jdk8 = { module = "com.fasterxml.jackson.datatype:jackson-datatype-jdk8", version.ref = "jacksonVersion" }
+jackson-dataformat-xml = { module = "com.fasterxml.jackson.dataformat:jackson-dataformat-xml", version.ref = "jacksonVersion" }
+
+mockk = { module = "io.mockk:mockk", version.ref = "mockkVersion" }
+mockk-android = { module = "io.mockk:mockk-android", version.ref = "mockkVersion" }
+
+junit-jupiter-api = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junitJupiterVersion" }
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junitJupiterVersion" }
+junit-jupiter-engine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junitJupiterVersion" }
+junit-vintage-engine = { module = "org.junit.vintage:junit-vintage-engine", version.ref = "junitJupiterVersion" }
+robolectric = { module = "org.robolectric:robolectric", version.ref = "robolectricVersion" }
+
+android-test-core = { module = "de.mannodermaus.junit5:android-test-core", version.ref = "junit5AndroidTest" }
+android-test-runner = { module = "de.mannodermaus.junit5:android-test-runner", version.ref = "junit5AndroidTest" }
+
+koin-android = { module = "io.insert-koin:koin-android", version.ref = "koinAndroidVersion" }
+koin-android-ext = { module = "io.insert-koin:koin-android-ext", version.ref = "koin_version" }
+koin-androidx-compose = { module = "io.insert-koin:koin-androidx-compose", version.ref = "koinAndroidVersion" }
+koin-androidx-workmanager = { module = "io.insert-koin:koin-androidx-workmanager", version.ref = "koinAndroidVersion" }
+koin-core-ext = { module = "io.insert-koin:koin-core-ext", version.ref = "koin_version" }
+koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin_version" }
+koin-test-junit5 = { module = "io.insert-koin:koin-test-junit5", version.ref = "koin_version" }
+koin-logger-slf4j = { module = "io.insert-koin:koin-logger-slf4j", version.ref = "koin_version" }
+
+androidx-room-common = { module = "androidx.room:room-common", version.ref = "room_version" }
+androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "room_version" }
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "room_version" }
+room-compiler = { module = "androidx.room:room-compiler", version.ref = "room_version" }
+
+mapstruct = { module = "org.mapstruct:mapstruct", version.ref = "mapstructVersion" }
+mapstruct-processor = { module = "org.mapstruct:mapstruct-processor", version.ref = "mapstructVersion" }
+
+kotlin-result = { module = "com.michael-bull.kotlin-result:kotlin-result", version.ref = "kotlinResultVersion" }
+kotlin-result-coroutines = { module = "com.michael-bull.kotlin-result:kotlin-result-coroutines", version.ref = "kotlinResultVersion" }
+
+kotlin-retry = { module = "com.michael-bull.kotlin-retry:kotlin-retry", version.ref = "kotlinRetryVersion" }
+
+bcprov-jdk18on = { module = "org.bouncycastle:bcprov-jdk18on", version.ref = "bcprovJdk18onVersion" }
+
+workmanager = { module = "androidx.work:work-runtime", version.ref = "workVersion"}
+worktester = { module = "androidx.work:work-testing", version.ref = "workVersion" }
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
+
+detekt-formatting = { module = "io.gitlab.arturbosch.detekt:detekt-formatting", version.ref = "detektVersion" }
+detekt-cli = { module = "io.gitlab.arturbosch.detekt:detekt-cli", version.ref = "detektVersion" }
+
+paxstore-android-sdk = { module = "com.whatspos.sdk:paxstore-3rd-app-android-sdk", version.ref = "paxstoreSdkVersion" }
+
+desugar-jdk-libs = { module = "com.android.tools:desugar_jdk_libs", version.ref = "desugarJdkLibVersion" }
+
+firebaseBom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebaseBomVersion" }
+firebaseCrashlytics = { group = "com.google.firebase", name = "firebase-crashlytics" }
+firebaseAnalytics = { group = "com.google.firebase", name = "firebase-analytics" }
+
+signalr = { module = "com.microsoft.signalr:signalr", version.ref = "signalrVersion" }
+
+# https://mvnrepository.com/artifact/org.awaitility/awaitility-kotlin
+awaitility = { module = "org.awaitility:awaitility-kotlin", version.ref = "awaitilityVersion" }
+
+okhttp-tls = { module = "com.squareup.okhttp3:okhttp-tls", version.ref = "okhttpTlsVersion" }
+
+# For custom gradle plugins
+# Dependencies of the included build-logic
+android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "agp" }
+kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+gradleDoctor-gradlePlugin = { module = "com.osacky.doctor:doctor-plugin", version.ref = "gradleDoctorVersion" }
+kotlinXKover-gradlePlugin = { module = "org.jetbrains.kotlinx:kover-gradle-plugin", version.ref = "koverVersion" }
+kotlinDetekt-gradlePlugin = { module = "io.gitlab.arturbosch.detekt:detekt-gradle-plugin", version.ref = "detektVersion" }
+owaspDependencyCheck-gradlePlugin = { module = "org.owasp:dependency-check-gradle", version.ref = "dependencyCheckVersion" }
+composeBitmap = { module = "dev.shreyaspatil:capturable", version.ref = "composeBitmapVerison" }
+
+coilCompose = { module = "io.coil-kt:coil-compose", version.ref = "coilVersion" }
+appStartup = { module = "androidx.startup:startup-runtime", version.ref = "appStartupVersion" }
+androidx-ui-graphics-android = { group = "androidx.compose.ui", name = "ui-graphics-android", version.ref = "uiGraphicsAndroid" }
+
+[plugins]
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlinJvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+secrets = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "secretsVersion" }
+kotlinDetekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detektVersion" }
+kotlinXKover = { id = "org.jetbrains.kotlinx.kover", version.ref = "koverVersion" }
+junit5Android = { id = "de.mannodermaus.android-junit5", version.ref = "junit5AndroidVersion" }
+googleServices = { id = "com.google.gms.google-services", version.ref = "googleGmsServicesVersion" }
+firebaseCrashlytics = { id = "com.google.firebase.crashlytics", version.ref = "firebaseAnalyticsVersion" }
+gradleDoctor = { id = "com.osacky.doctor", version.ref = "gradleDoctorVersion" }
+composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+owaspDependencyCheck = { id = "org.owasp.dependencycheck", version.ref = "dependencyCheckVersion" }
+
+# Defined custom gradle plugins
+conventionPlugin-gradleDoctor = { id = "conventionPlugin.gradleDoctor", version = "unspecified" }
+conventionPlugin-kotlinXKover = { id = "conventionPlugin.kover", version = "unspecified" }
+conventionPlugin-kotlinDetekt = { id = "conventionPlugin.detekt", version = "unspecified" }
+conventionPlugin-dependencyCheck = { id = "conventionPlugin.dependencyCheck", version = "unspecified" }
+conventionPlugin-androidLibrary = { id = "conventionPlugin.androidLibrary", version = "1.0-SNAPSHOT" }
+conventionPlugin-androidApplication = { id = "conventionPlugin.androidApplication", version = "1.0-SNAPSHOT" }

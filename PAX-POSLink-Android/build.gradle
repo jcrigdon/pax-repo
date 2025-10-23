@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('PAX_POSLinkAndroid_20250807.aar'))
